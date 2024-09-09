@@ -6,52 +6,146 @@
   publishedAt: '2024-08-10'
 ---
 
-This is a full-stack ecommerce store built with NextJs and Stripe. It uses the
-`@stripe/stripe-js` package to handle payments and the `@next/bundle-analyzer`
-package to analyze the bundle size.
+# ChessBar
 
-## Features
+This project is the frontend application for ChessBar, a platform to organize and manage chess tournaments. The application allows administrators to create, update, and manage tournaments, as well as view participant information.
 
-- **Stripe Payments**: Accept payments using the Stripe API.
-- **Product Catalog**: Display products in a grid layout.
-- **Shopping Cart**: Add products to the shopping cart and checkout.
-- **User Authentication**: Allow users to sign up and log in.
-- **Order History**: View order history and track shipments.
+## Table of Contents
 
-## Technologies
-
-- **NextJs**: A React framework for building static and dynamic websites.
-- **Stripe**: A payment processing platform for online businesses.
-- **Tailwind CSS**: A utility-first CSS framework for building custom designs.
-- **Vercel**: A cloud platform for static sites and serverless functions.
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Project Structure](#project-structure)
+- [API Endpoints](#api-endpoints)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ## Getting Started
 
-To get started with this project, you can clone the repository and install the
-dependencies:
+Follow these instructions to set up and run the project on your local machine for development and testing purposes.
 
-```bash
-git clone
-cd ecommerce-store
-npm install
+### Prerequisites
+
+Ensure you have the following software installed:
+
+- [Node.js](https://nodejs.org/en/) (version 14 or above)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/chessbar.git
+
+2. Navigate to the project directory:
+   ```sh
+    cd chessbar
+
+3. Install the dependencies:
+   ```sh
+    npm install
+
+### Running the Application
+
+1. To start the development server, run:
+   ```sh
+    npm start
+
+2. Open your web browser and navigate to http://localhost:yourPORT to see the application running.
+
+### Project Structure
+
+The project structure is as follows:
+```sh
+chessbar/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── AdminSidebar.js
+│   │   └── ...
+│   ├── pages/
+│   │   ├── UpdateTournament.js
+│   │   └── ...
+│   ├── utils/
+│   │   ├── authGuard.js
+│   │   └── ...
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+└── README.md
 ```
 
-Once the dependencies are installed, you can run the development server:
+public/: Contains static assets like HTML, images, etc.
+src/: Contains the main source code for the application.
+components/: Reusable components.
+pages/: Page components for different routes.
+utils/: Utility functions and helpers.
+App.js: Main application component.
+index.js: Entry point of the application.
 
-```bash
-npm run dev
+### API Endpoints
+
+The application communicates with the backend via RESTful API endpoints. Here are some key endpoints:
+
+GET /api/tournaments/:id: Fetch details of a specific tournament.
+PUT /api/tournaments/:id: Update a specific tournament.
+
+### Usage
+
+### Step 1: Authentication
+
+The application uses token-based authentication. Ensure you have a valid token to access the admin routes.
+
+### Step 2: Viewing Tournaments
+
+1. Navigate to the tournaments page to view all tournaments.
+2. Click on a tournament to view its details.
+
+### Step 3: Updating a Tournament
+
+1. Navigate to the tournament update page (e.g., /admin/tournaments/update/:id).
+2. Fill in the form fields with the new tournament details.
+3. Submit the form to update the tournament in the database.
+
+### Step 4: Creating a Tournament
+
+1. Navigate to the tournament creation page (e.g., /admin/tournaments/create).
+2. Fill in the form fields with the tournament details.
+3. Submit the form to create a new tournament in the database.
+
+### Contributing
+
+We welcome contributions! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch:
+```sh
+git checkout -b feature/chessbar
 ```
 
-The development server will start at `http://localhost:3000`.
+3. Make your changes and commit them:
+```sh
+git commit -m 'Add some feature'
+```
 
-## Deployment
+4. Make your changes and commit them:
+```sh
+git push origin feature/your-feature-name
+```
 
-To deploy this project, you can use Vercel. You can link your GitHub repository
-to Vercel and deploy the project with a single click.
+5. Open a pull request.
 
-## Conclusion
+### License
 
-This ecommerce store is a great example of how you can build a full-stack
-application with NextJs and Stripe. By integrating the Stripe API with NextJs,
-you can create a seamless shopping experience for your customers and manage
-payments securely and efficiently.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+### Acknowledgements
+
+- [React](https://reactjs.org/)
+- [Node.js](https://nodejs.org/en)
