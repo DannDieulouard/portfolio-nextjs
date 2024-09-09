@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import authorImage from '@/public/images/authors/moi.png'
+import { Button } from "@/components/ui/button";
 
 import { JSX, SVGProps } from 'react'
 
@@ -58,6 +59,15 @@ export default function Intro() {
               </a>
             ))}
           </div>
+          <div className='mt-6 flex justify-center'>
+          <a
+                href="\images\authors\monCV.pdf"
+                download="Dann Dieulouard CV.pdf"
+                className='text-muted-foreground hover:text-foreground'
+              >
+                <Button variant="outline">CV Resume</Button>
+              </a>
+        </div>
       </div>
       <div className='relative'>
         <Image
