@@ -61,8 +61,8 @@ export default function Intro() {
           </div>
           <div className='mt-6 flex justify-center'>
           <a
-                href="\images\authors\monCV.pdf"
-                download="Dann Dieulouard CV.pdf"
+                href="\images\authors\Dann-Dieulouard-CV.pdf"
+                download="Dann-Dieulouard-CV.pdf"
                 className='text-muted-foreground hover:text-foreground'
               >
                 <Button variant="outline">CV Resume</Button>
