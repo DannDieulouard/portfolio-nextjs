@@ -13,7 +13,7 @@ export const metadata: Metadata = {
           <h2 className='title'>Privacy policy</h2>
           <h3 className='mt-6'>Last updated: September 10, 2024</h3>
 
-          <h6 className='mt-6'>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website "danndieulouard.com" or use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.</h6>
+          <h6 className='mt-6'>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website danndieulouard.com or use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.</h6>
 
           <h6 className='mt-3'>1. Information We Collect</h6>
           <h6 className='mt-3'>We may collect information about you in a variety of ways. The information we may collect on the site includes:</h6>
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
           <h6 className='mt-3'>We do not knowingly collect or solicit information from children under the age of 13. If we become aware that we have inadvertently received personal information from a child under the age of 13, we will delete such information from our records.</h6>
 
           <h6 className='mt-3'>7. Changes to This Privacy Policy</h6>
-          <h6 className='mt-3'>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date of this Privacy Policy. You are encouraged to review this Privacy Policy periodically to stay informed of any updates.</h6>
+          <h6 className='mt-3'>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the last updated date of this Privacy Policy. You are encouraged to review this Privacy Policy periodically to stay informed of any updates.</h6>
         </div>
       </section>
     )
