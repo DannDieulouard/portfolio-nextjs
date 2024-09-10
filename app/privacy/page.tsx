@@ -6,11 +6,11 @@ export const metadata: Metadata = {
     description: 'Learn about the privacy practices of Dann Dieulouard.',
   };
 
-  export default function PrivatePolicy() {
+  export default function PrivacyPolicy() {
     return (
       <section className='pb-24 pt-40'>
         <div className='container max-w-3xl'>
-          <h2 className='title'>Private policy</h2>
+          <h2 className='title'>Privacy policy</h2>
           <h3 className='mt-6'>Last updated: September 10, 2024</h3>
 
           <h6 className='mt-6'>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website "danndieulouard.com" or use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.</h6>
