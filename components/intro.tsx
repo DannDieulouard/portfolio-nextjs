@@ -1,7 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import authorImage from '@/public/images/authors/moi.png'
 import { Button } from "@/components/ui/button";
-
 import { JSX, SVGProps } from 'react'
 
 const navigation = [
@@ -34,7 +35,8 @@ const navigation = [
 
 export default function Intro() {
   return (
-    <section className='flex flex-col-reverse items-start gap-x-10 gap-y-4 pb-24 md:flex-row md:items-center'>
+    <>
+        <section className='flex flex-col-reverse items-start gap-x-10 gap-y-4 md:flex-row min-h-full'>
       <div className='mt-2 flex-1 md:mt-0'>
         <h1 className='title no-underline'>Hey, I&#39;m Dann.</h1>
         <p className='mt-3 font-light text-muted-foreground'>
@@ -45,7 +47,28 @@ export default function Intro() {
         <p className='mt-3 font-light text-muted-foreground'>
           Actually looking for a one-year apprenticeship !
         </p>
-        <div className='mt-10 flex justify-center space-x-10 md:order-2'>
+      </div>
+      <div className='relative'>
+        <Image
+          className='flex-1 rounded-lg grayscale'
+          src={authorImage}
+          alt='Dann Dieulouard'
+          width={175}
+          height={175}
+          priority
+        />
+      </div>
+    </section>
+    <div className='mt-9 mb-9 text-center'>
+      <p className='mt-3'>Soft skills</p>
+      <p className='mt-3 font-light text-muted-foreground'>Communication, problem-solving, teamwork. Adaptive, curious and fast learner.</p>
+      <p className='mt-3'>Front-end</p>
+      <p className='mt-3 font-light text-muted-foreground'>React.js, Next.js, TypeScript, ES6 JavaScript, Tailwind, SCSS.</p>
+      <p className='mt-3'>Back-end</p>
+      <p className='mt-3 font-light text-muted-foreground'>Node.js, Express, Sequelize and database management such as mySQL/MariaDB.</p>
+      <p className='mt-3'>Cherry on the cake</p>
+      <p className='mt-3 font-light text-muted-foreground'>Agile software development, Figma UI/UX design, Heroku/Vercel deployments.</p>
+      <div className='mt-10 flex justify-center space-x-10 md:order-2'>
             {navigation.map(item => (
               <a
                 key={item.name}
@@ -68,17 +91,7 @@ export default function Intro() {
                 <Button variant="outline">CV Resume</Button>
               </a>
         </div>
-      </div>
-      <div className='relative'>
-        <Image
-          className='flex-1 rounded-lg grayscale'
-          src={authorImage}
-          alt='Dann Dieulouard'
-          width={175}
-          height={175}
-          priority
-        />
-      </div>
-    </section>
+        </div>
+    </>
   )
 }
