@@ -36,8 +36,8 @@ const navigation = [
 export default function Intro() {
   return (
     <>
-        <section className='flex flex-col-reverse items-start gap-x-10 gap-y-4 md:flex-row min-h-full'>
-      <div className='mt-2 flex-1 md:mt-0'>
+        <section className='flex flex-col-reverse items-center gap-x-10 gap-y-4 sm:items-start md:flex-row min-h-full'>
+      <div className='mt-2 flex-1 md:mt-0 text-center sm:text-left'>
         <h1 className='title no-underline'>Hey, I&#39;m Dann.</h1>
         <p className='mt-3 font-light text-muted-foreground'>
           I&#39;m a full-stack developer based in Bordeaux, France. I&#39;m
@@ -49,15 +49,15 @@ export default function Intro() {
         </p>
       </div>
       <div className='relative'>
-        <Image
-          className='flex-1 rounded-lg grayscale'
-          src={authorImage}
-          alt='Dann Dieulouard'
-          width={175}
-          height={175}
-          priority
-        />
-      </div>
+  <Image
+    className='flex-1 rounded-lg grayscale'
+    src={authorImage}
+    alt='Dann Dieulouard'
+    width={175}
+    height={175}
+    priority
+  />
+</div>
     </section>
     <div className='mt-9 mb-9 text-center'>
       <p className='mt-3'>Soft skills</p>
