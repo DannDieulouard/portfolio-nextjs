@@ -45,7 +45,7 @@ export default function Intro() {
           others.
         </p>
         <p className='mt-3 font-light text-muted-foreground'>
-          Actually looking for a junior position !
+          Actually open to new opportunities.
         </p>
       </div>
       <div className='relative'>
